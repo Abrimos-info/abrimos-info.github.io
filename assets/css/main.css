@@ -834,6 +834,14 @@ button,
         margin-top: 0;
         position: absolute; } }
 
+/* Img responsive */
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 /* Footer */
 #footer {
   -moz-transition: opacity 0.5s ease-in-out;
@@ -885,3 +893,4 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+
