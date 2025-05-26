@@ -2099,7 +2099,9 @@ button,
       padding-top: 6.5em; }
       #header .logo {
         font-size: 1.25em;
-        margin: 0; }
+        margin: 0;
+        flex-basis: 100%;
+       }
       #header .icons {
         height: 5em;
         line-height: 5em;
@@ -2271,3 +2273,36 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+.header-icons-lang {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1em;
+}
+.lang-selector-header {
+	margin: 0 1em 2em 0;
+	font-size: 1em;
+	white-space: nowrap;
+}
+@media screen and (max-width: 736px) {
+	.header-icons-lang {
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 0.5em;
+	}
+	.lang-selector-header {
+		font-size: 1em;
+		margin-left: 0.5em;
+	}
+}
+
+#sidebar #search.alt {
+	display: none;
+}
+@media screen and (max-width: 736px) {
+	#sidebar #search.alt {
+		display: block;
+	}
+}
